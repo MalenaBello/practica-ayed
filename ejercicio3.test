@@ -1,0 +1,45 @@
+package ejercicio3;
+import java.util.Set;
+public class Test  {
+	public static void main (String[]args) {
+	
+	Estudiante [] VectorE=new Estudiante[2];
+	VectorE[0]=new Estudiante();
+	VectorE[0].setNombre("malena");
+	VectorE[0].setApellido("Bello");
+	VectorE[0].setEmail("tatatata");
+	VectorE[0].setComision(6);
+	VectorE[1] =new Estudiante();
+	VectorE[1].setNombre("male");
+	VectorE[1].setApellido("Bel");
+	VectorE[1].setEmail("lalal");
+	VectorE[1].setComision(2);
+	
+	Profesor [] VectorP = new Profesor[3];
+	VectorP[0] = new Profesor();
+	VectorP[0].setApellido("la");
+	VectorP[0].setCatedra("el");
+	VectorP[0].setMail("e");
+	VectorP[0].setFacultad("info");
+	VectorP[0].setNombre("d");
+	VectorP[1] = new Profesor();
+	VectorP[1].setApellido("lla");
+	VectorP[1].setCatedra("el");
+	VectorP[1].setMail("ee");
+	VectorP[1].setFacultad("infor");
+	VectorP[1].setNombre("de");
+	VectorP[2] = new Profesor();
+	VectorP[2].setApellido("lsa");
+	VectorP[2].setCatedra("els");
+	VectorP[2].setMail("ed");
+	VectorP[2].setFacultad("informa");
+	VectorP[2].setNombre("dql");
+	
+	for(int i=0; i<1; i++) {
+		System.out.println(VectorE[i].tusDatos());
+}
+	for (int i=0; i < 2; i++) {
+		System.out.println(VectorP[i].tusDatos());
+		
+	}
+}}
