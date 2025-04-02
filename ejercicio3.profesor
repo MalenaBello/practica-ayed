@@ -1,0 +1,62 @@
+package ejercicio3;
+
+public class Profesor {
+
+	
+	private String Nombre;
+	private String Apellido;
+	private String mail;
+	private String catedra; 
+	private String Facultad;
+	public Profesor() {
+		Nombre = null;
+		Apellido= null;
+		mail= null;
+		catedra=null;
+		Facultad=null;
+	}
+	
+	public Profesor(String nombre, String apellido, String mail, String facultad, String catedra) {
+		Nombre = nombre;
+		Apellido = apellido;
+		this.mail = mail;
+		this.Facultad= Facultad;
+		this.catedra=catedra;
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public String getApellido() {
+		return Apellido;
+	}
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+	public String getMail() {
+		return mail;
+	}
+	public void setMail(String mail) {
+		this.mail = mail;
+	}
+	public String getCatedra() {
+		return catedra;
+	}
+	public void setCatedra(String catedra) {
+		this.catedra = catedra;
+	}
+	public String getFacultad() {
+		return Facultad;
+	}
+	public void setFacultad(String facultad) {
+		Facultad = facultad;
+	}
+	public String tusDatos() {
+		return "Profesor [Nombre=" + Nombre  + ", Apellido=" + Apellido + ", mail=" + mail + ", catedra=" + catedra
+				+ ", Facultad=" + Facultad + "]";
+	}
+	
+	
+}
