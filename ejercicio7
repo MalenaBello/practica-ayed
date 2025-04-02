@@ -1,0 +1,39 @@
+package ejercicio7;
+import ejercicio3.Estudiante;
+import java.util.*;
+public class Estudiantes {
+	
+	public static List CrearLista() {
+		 LinkedList<Estudiante> L = new LinkedList<>();
+		 Estudiante Est =new Estudiante("malena", "bello", 3, "mail.com", "por ahi");
+		 L.add(Est);
+		 Est = new Estudiante("male", "bel", 4, "mail.ar", "por aca");
+		 L.add(Est);
+		 Est = new Estudiante ("ma", "b", 3, ".com", "por");
+		 L.add(Est);
+		 return L;
+	}
+	public static void ImprimirLista (List<Estudiante> L) {
+		for (Estudiante Est: L) {
+			System.out.print(Est.tusDatos());
+		}}
+	public static void ModificarComision(List <Estudiante> L,Scanner s) {
+		for (Estudiante Est:L) {
+			System.out.println("ingrese el cambio de comicion");
+			Est.setComision(s.nextInt());
+	}
+	}
+	
+	public static void main (String[]Args) {
+		Scanner s = new Scanner(System.in);
+		List L= CrearLista();
+		LinkedList<Estudiante> copia = new LinkedList(L); //genera la copia 
+		System.out.println("lista original");
+		ImprimirLista(L);
+		System.out.println("ahora la copia");
+		ImprimirLista(copia);
+		ModificarComision (L,s);
+		System.out.println("Lista original");
+		ImprimirLista(L);
+		System.out.println("Lista original");
+		ImprimirLista(copia);}}
