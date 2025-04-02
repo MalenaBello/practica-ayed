@@ -1,0 +1,73 @@
+package ejercicio3;
+
+public class Estudiante {
+	private String nombre;
+	private String Apellido;
+	private int Comision;
+	private String email;
+	private String direccion;
+	
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return Apellido;
+	}
+
+	public void setApellido(String apellido) {
+		Apellido = apellido;
+	}
+
+	public int getComision() {
+		return Comision;
+	}
+
+	public void setComision(int comision) {
+		Comision = comision;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public Estudiante(String nombre, String apellido, Integer comision, String email, String direccion) {
+		this.nombre = nombre;
+		Apellido = apellido;
+		Comision = comision;
+		this.email = email;
+		this.direccion = direccion;
+	}
+
+	public Estudiante() {
+		nombre=null;
+		Apellido=null;
+		Comision=0;
+		email= null;
+		direccion=null;
+	}
+
+	public String tusDatos() {
+		return "Estudiante [nombre=" + nombre + ", Apellido=" + Apellido + ", Comision=" + Comision + ", email=" + email
+				+ ", direccion=" + direccion + "]";
+	}
+
+
+
+}
