@@ -1,0 +1,35 @@
+public class Datos {
+	private int Max;
+	private int min; 
+	private double prom;
+	public int getMax() {
+		return Max;
+	}
+	public void setMax(int max) {
+		Max = max;
+	}
+	public int getMin() {
+		return min;
+	}
+	public void setMin(int min) {
+		this.min = min;
+	}
+	public double getProm() {
+		return prom;
+	}
+	public void setProm(double prom) {
+		this.prom = prom;
+	}
+	public Datos() {
+		Max=0; 
+		min=0;
+		prom=0;
+		
+	}
+
+	public String toString() {
+		return "Datos [ el maximo= " + Max + ", min= " + min + ", prom= " + prom + "]"  ;
+	}
+
+	
+}
