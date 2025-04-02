@@ -1,0 +1,60 @@
+package ejercicio5;
+
+public class calculadora {
+	static int Max;
+	static int Min;
+	static double Prom;
+	
+	public static Datos Calcular (int [] Vec) {
+		int max=0; int min=1000; double prom; int suma=0;
+		for (int num: Vec) {
+			if ( num < min ) {
+				min=num;}
+			if (num > max) {
+				max= num;
+			}
+			suma += num;
+			}
+		prom = suma / Vec.length;
+		Datos Valor= new Datos();
+		Valor.setMax(max);
+		Valor.setMin(min);
+		Valor.setProm(prom);
+		return Valor;
+	}
+	public static void Calcular2 (int[]Vec, Datos valores) {
+		int max=0; int min=1000; double prom; int suma=0;
+		for (int num: Vec) {
+			if ( num < min ) {
+				min=num;}
+			if (num > max) {
+				max= num;
+			} suma+= num;
+			}
+		prom = suma / Vec.length;
+		valores.setMax(max);
+		valores.setMin(min);
+		valores.setProm(prom);
+	}
+	public static void Calcular3 (int[]vec) {
+		int suma=0;
+		Max = vec[0]; Min= vec[0]; Prom = vec[0]; // inicializamos las variables estaticas en el primer elemento del vector
+		for (int num: vec) {
+			if ( num < Min ) {
+				Min= num;}
+			if (num> Max) {
+				Max= num;}
+			suma += num;
+		} Prom = suma / vec.length;
+	}
+	public static void main (String[]args) {
+		int[] Vec =  {2,4,3,5,6};
+		System.out.println( Calcular(Vec).toString() );
+		Datos Valor = new Datos() ;  
+		Calcular2(Vec,Valor);
+		System.out.println(Valor.toString());
+		Calcular3(Vec);
+		System.out.println("el maximo: " + Max + " el minimo: " + Min + " el promedio: " + Prom);
+		
+	}
+}
